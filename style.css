@@ -1,0 +1,175 @@
+/* ====== Gaya Umum ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* ====== Header ====== */
+#header-utama {
+  background-color: #005b96;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ====== Navigasi ====== */
+.navigasi ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #03396c;
+  overflow: hidden;
+}
+
+.navigasi li {
+  float: left;
+}
+
+.navigasi a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+
+.navigasi a:hover {
+  background-color: #6497b1;
+}
+
+/* ====== Konten ====== */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ====== Form ====== */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #005b96;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #03396c;
+}
+
+/* ====== Tabel ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #005b96;
+  color: white;
+}
+
+/* ====== Flexbox Galeri ====== */
+.galeri {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kartu {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+}
+
+.kartu img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .kartu {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .kartu {
+    width: 100%;
+  }
+}
+
+/* ====== Tombol Fixed ====== */
+.fixed-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #005b96;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fixed-btn:hover {
+  background-color: #03396c;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #011f4b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  clear: both;
+}
